@@ -1,2 +1,2 @@
 # WebSpider
-A new project to bulit a web spider in pyhton.
+A new side-project with the goal to bulid a web spider in pyhton.
