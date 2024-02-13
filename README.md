@@ -1,2 +1,2 @@
-# WebSpider
-A new side-project with the goal to bulid a web spider in pyhton.
+# Python-Offsec-Tools
+A library with some Python scripts to automate some processes in penetration testing.
