@@ -49,3 +49,28 @@ for URL in urlList:
 
 for URL in urlList:
    print(URL)
+
+''' 
+# --------> Second Way with BeautifulSoup <----------
+
+import urllib3
+import requests
+from urllib.request import urlopen
+from bs4 import BeautifulSoup
+
+url = "your_url"
+directory = "/your_direcory_to_start"
+page = urlopen(url+directory).read()
+soup = BeautifulSoup(page, features="html.parser")
+
+all_urls = []
+
+for link in soup.find_all('a'):
+    links=link.get('href')
+    all_urls.append(links)
+
+for t_url in all_urls:
+    print("Content of: "+t_url)
+    response = requests.get(url+t_url)
+    print(response.text)
+'''
